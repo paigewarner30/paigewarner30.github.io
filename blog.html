@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<title>Wordy Stuff</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+
+
+<body>
+
+
+body {
+    font-family: Biko;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    line-height: 125px;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50%;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    font-family: biko;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.button:active {
+  background-color: peachpuff;
+  transform: translateY(4px);
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="photogallery.html">visual stuff</a>
+  <a href="blog.html">wordy stuff</a>
+  <a href="#">me stuff</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<!-- Top menu -->
+<h1>wordy stuff</h1>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:50px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="SomeThoughts.jpg" alt="Thoughts" style=width:200%>
+    </div>
+    <div class="w3-quarter" style= _________________>
+      <img src="SomeFood1.jpg" alt="Food" style="width:200%">
+    </div>
+
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="SomePlaces.jpg" alt="Places" style="width:200%">
+    </div>
+    <div class="w3-quarter" style=margin-left:600px>
+      <img src="SomeWork.jpg" alt="Work" style="width:200%">
+    </div>
+  </div>
+
+
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">
+    <h3>About Me, The Stuff Doer</h3><br>
+    <img src="paige_paige.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="400" height="300">
+    <div class="w3-padding-32">
+      <h4><b>Me!!! Paige!!!!</b></h4>
+      <h6><i>Like what you find in a book except add an i in the middle</i></h6>
+      <p>Hello hello hello. My name is Paige, which I have learned is a name very common in America but totally and completely unknown to anyone in any other country. It's a simple name,
+      and I'm a simple person, but once in a while I like to be a little less simple and go to some pretty cool places. I also have this pretty cool camera and write some mildly cool
+      things, so I thought why not put these things on the interweb for folks to see? I'm making this website literally from scratch with some good old fashioned html, so don't judge
+      me too harshly on the presentation and such, but ya know I tried me best. Anywho, I hope you find my occasionally interesting life somewhat intriguing, and I think you should
+      be aware ahead of time of the plethora of hashtags coming your way full speed ahead. #they #will #show #no #mercy</p>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+
+</body>
+</html>

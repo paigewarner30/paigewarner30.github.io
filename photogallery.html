@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Peru</title>
+</head>
+
+<style>
+
+h1 {
+  font-family: biko;
+  font-size: 60px;
+}
+
+<body>
+
+
+body {
+      font-family: Biko;
+  }
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    line-height: 125px;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50%;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    font-family: biko;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.button:active {
+  background-color: peachpuff;
+  transform: translateY(4px);
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="photogallery.html">visual stuff</a>
+  <a href="blog.html">wordy stuff</a>
+  <a href="#">me stuff</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<h1>peru</h1>
+
+<div class= "container">
+    <img src="rainbow_mountain.jpg" alt="rainbow mountain" width="1380" height="900" class="center">
+    <div class="overlay">
+        <div class= "text">rainbow mountain hike</div>
+    </div>
+</div>
+<div class= "container">
+    <img src="paigefeet.jpg" alt="sacred valley" width="1390" height="890" class="center">
+    <div class="overlay">
+        <div class= "text">sacred valley</div>
+    </div>
+</div>
+<div class= "container">
+    <img src="Meg1.jpg" alt="meg" width="850" height="1300" class="center">
+    <div class="overlay">
+        <div class= "text">meg</div>
+    </div>
+</div>
+<div class= "container">
+    <img src="dandelion.jpg" alt="dendelion" width="1250" height="1000" class="center">
+    <div class="overlay">
+        <div class= "text">sacred valley flora</div>
+    </div>
+</div>
+<div class= "container">
+    <img src="verticalmountain.jpg" alt="the rainbow mountain" width="900" height="1350" class="center">
+    <div class="overlay">
+         <div class= "text">THE rainbow mountain</div>
+    </div>
+</div>
+<div class= "container">
+    <img src="Emma_and_Mags.jpg" alt="emma and mags" width="1350" height="900" class="center">
+    <div class="overlay">
+         <div class= "text">emma + mags</div>
+    </div>
+</div>
+<div class= "container">
+    <img src="Horse_ride.jpg" alt="horse ride" width="1000" height="1333" class="center">
+    <div class="overlay">
+         <div class= "text">laguna humantay trek</div>
+    </div>
+</div>
+<div class= "container">
+    <img src="Laguna_Humantay.jpg" alt="laguna humantay" width="1350" height="900" alt="Laguna Humantay" class="center">
+    <div class="overlay">
+         <div class= "text">laguna humantay</div>
+    </div>
+</div>
+<div class="container">
+    <img src="confusedpaige.jpg" alt="machu picchu, she thinks?" width="1350" height="900" class="center">
+    <div class="overlay">
+         <div class="text">machu picchu, she thinks?</div>
+    </div>
+</div>
+<div class="container">
+    <img src="aguas_calientes.jpg" alt="aguas calientes food" width="1350" height="900" class="center">
+    <div class="overlay">
+         <div class="text">aguas calientes food</div>
+    </div>
+</div>
+<div class="container">
+    <img src="aguas_calientes_2.jpg" alt="more aguas calientes food" width="1350" height="900" class="center">
+    <div class="overlay">
+         <div class="text">more aguas calientes food</div>
+    </div>
+</div>
+<div class="container">
+    <img src="plaza_de_armas_2.jpg" alt="plaza de armas" width="1350" height="900" class="center">
+    <div class="overlay">
+         <div class="text">la plaza de armas in action</div>
+    </div>
+</div>
+
+<h2>more on the way...</h2>
+</body>
+
+</html>

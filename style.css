@@ -1,0 +1,206 @@
+h1   {
+  color: black;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 75px;
+  font-family: "Biko";
+  border-bottom: 5px solid;
+  padding-bottom: 45px;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 40px;
+  font-family: "Biko";
+}
+
+h3 {
+  color: black;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-family: "Biko";
+  text-decoration: underline;
+}
+
+h4 {
+  font-size: 70px;
+  font-family: biko;
+  text-align: center;
+}
+
+body {
+  background-color: white;
+  border: 13px solid;
+  outline-style: solid;
+  outline-color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4%;
+}
+
+.center-text {
+  text-align: center;
+  border: 5px solid black;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.container:hover .overlay {
+  opacity: .5;
+}
+
+.text {
+  color: white;
+  font-size: 45px;
+  font-family: Biko;
+  position: absolute;
+  top: 45%;
+  left: 38%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  height: 200px;
+  align-items: stretch;
+}
+
+body {
+  font-family: biko;
+  padding: 10px;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 65px;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.header h4 {
+  font-size: 30px;
+  text-align: center;
+  background-color: white;
+}
+
+.header h5 {
+  font-size: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  font-family: sathu;
+}
+
+ul {
+  text-align: center;
+  font-size: 18px;
+  font-family: sathu;
+  padding-right: 40px;
+}
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: right;
+  width: 23%;
+  background-color: white;
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+.card1 {
+  background-color: snow;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  border: 5px solid;
+}
+
+.card2 {
+  background-color: aliceblue;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  border: 5px solid;
+}
+
+.card3 {
+  background-color: ghostwhite;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  border: 5px solid;
+}
+
+.card4 {
+  background-color: snow;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  border: 5px solid;
+  font-size: 30px;
+}
+
+table.center {
+  margin-left: 245px;
+  margin-right: 245px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
